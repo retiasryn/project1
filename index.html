@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title> ______ </title>
+  <title>_____</title>
   <link rel="stylesheet" href="stylesheet.css">  
 </head>
 
@@ -73,7 +73,7 @@
   <!--list display-->
 
   <div class="pic-section">
-    <div class="list-pict">
+    <div id="list" class="list-pict">
         <ul class="flex-list">
             <li>
                 <img class="on list-opacity list-hover-opacity-off" src="pict1.jpg" onclick="currentDiv(1)" title="Gili Islands">
@@ -97,6 +97,7 @@
     </div>
   </div>
   <script>
+    // Slideshow
     var slideIndex = 1;
     showDivs(slideIndex);
 
@@ -119,6 +120,16 @@
       x[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += "list-opacity-off";
     }
+    //current button (highlight)
+      var header = document.getElementById("list");
+      var btns = header.getElementsByClassName("list-hover-opacity");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+      }
     </script>  
   </fieldset>
   </div>  
