@@ -13,14 +13,14 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
 fieldset {
     width: 80%;
     border: none;
-    margin: 0 auto;
+    margin: auto;
     border-top: solid 1px #01245c;
     border-bottom: solid 1px #01245c;
 }
 
 fieldset legend {
     letter-spacing: 10px;
-    padding: 10px;
+    padding: 12px;
     color: #01245c;
     font-family: Gotham-Medium;
     font-size: 20px;
@@ -68,12 +68,16 @@ fieldset legend {
     padding: 2px 15px 5px 15px;
 }
 
+.pict-section {
+    margin: 30px!important;
+}
+
 .list-pict {
     width: 100%; 
 }
 
 .list-opacity-off, .list-hover-opacity-off:hover {
-    opacity: 2;
+    opacity: 1;
 }
 
 .list-opacity, .list-hover-opacity:hover {
@@ -84,11 +88,14 @@ fieldset legend {
     display: flex;
     flex:auto;
   }
-ul {
+
+  ul {
     list-style: none;
+    margin-top: 20px;
     padding: 2px 0px 0px 0px;
   }
-li {
+
+  li {
       margin-right: auto;
       margin-left: auto;
       padding: 5px;
@@ -98,5 +105,4 @@ li {
     width: 100%;
     height: 70px;
     cursor: pointer;
-
 }
