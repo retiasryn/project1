@@ -77,11 +77,11 @@ fieldset legend {
 }
 
 .list-opacity-off, .list-hover-opacity-off:hover {
-    opacity: 2;
+    opacity: 1;
 }
 
 .list-opacity, .list-hover-opacity:hover {
-    opacity: 0.80;
+    opacity: 0.50;
 }
 
 .flex-list {
