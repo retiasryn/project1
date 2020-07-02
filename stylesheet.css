@@ -1,44 +1,38 @@
-@media (max-width:1000px);
+@media (max-width:1000px) {}
 
 body,h1,h2,h3,h4,h5,h6, p, li, ul {
-    font-family: "Raleway", Helvetica, sans-serif;
+    font-family: sans-serif;
     text-decoration: none;
 }
 
-.main {
+.main, .news {
     height: 100px;
     background-color: antiquewhite;
 }
-
-.news {
-    height: 100px;
-    background-color: antiquewhite;
-}
-
 
 fieldset {
-    width: 97%;
+    width: 80%;
     border: none;
-    border-top: solid 1px #fff;
-
+    margin: 0 auto;
+    border-top: solid 1px #01245c;
+    border-bottom: solid 1px #01245c;
 }
 
 fieldset legend {
+    letter-spacing: 10px;
+    padding: 10px;
     color: #01245c;
     font-family: Gotham-Medium;
     font-size: 20px;
+    text-align: center;
 }
 
-fieldset legend:hover {
-}
-
-.mySlides {display: none}
+.mySlides {display: none;}
 
 .pict-content {
     height: 600px;
-    margin: auto;
-    background-color: aliceblue;
-    text-align: center;
+    margin:auto;
+    background-color: rgb(142, 176, 206);
 }
 
 .pict-container {
@@ -48,12 +42,11 @@ fieldset legend:hover {
 .pict-display {
     position: relative;
     margin: 0 auto;
-    text-align: center;
 }
 
 .txt-display {
+    display: block;
     position: absolute;
-    align-content: center;
     margin-left: 10px;
     float: left;
     bottom: 15px;
@@ -63,27 +56,16 @@ fieldset legend:hover {
 }
 
 .txt-display h3 {
-    display: block;
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    padding-left: 15px;
     font-size: 15px; 
     margin: 0 auto;
+    padding: 5px 15px 1px 15px;
 }
 
 .txt-display p {
-    display: block;
-    padding-top: 1px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-left:15px;
+    text-align: left;
     font-size: 10px;
     margin: 0 auto;
-}
-
-.pict-section {
-    margin: 30px!important;
+    padding: 2px 15px 5px 15px;
 }
 
 .list-pict {
@@ -91,8 +73,9 @@ fieldset legend:hover {
 }
 
 .list-opacity-off, .list-hover-opacity-off:hover {
-    opacity: 1;
+    opacity: 2;
 }
+
 .list-opacity, .list-hover-opacity:hover {
     opacity: 0.60;
 }
@@ -102,22 +85,21 @@ fieldset legend:hover {
     flex:auto;
   }
 
-  ul {
+.flex-list ul {
     list-style: none;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 2px 0px 0px 0px;
   }
 
-  li {
-      margin: 0 auto;
-      padding: 3px;
+flex-list li {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 5px;
   }
 
 .flex-list img {
     width: 100%;
-    height: 98px;
+    height: 70px;
     cursor: pointer;
 
 }
