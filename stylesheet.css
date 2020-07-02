@@ -29,6 +29,9 @@ fieldset legend {
     font-size: 20px;
 }
 
+fieldset legend:hover {
+}
+
 .mySlides {display: none}
 
 .pict-content {
@@ -37,11 +40,6 @@ fieldset legend {
     background-color: aliceblue;
     text-align: center;
 }
-
-.pict-content:hover h2 {
-    color: #4CAF50!important;
-}
-
 
 .pict-container {
     padding: 10px;
