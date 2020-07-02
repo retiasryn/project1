@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <title>G A L E R Y</title>
+  <link rel="stylesheet" href="stylesheet.css">  
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <div class="main">
+    </div>
+
+    <div class="section-content">
+
+ <!--Retia-->
+ <div class="pict-content">
+
+  <!-- Slideshow Header -->
+  <div class="pict-container">
+    <h2>G A L E R Y</h2>
+    <div class="pict pict-display mySlides">
+    <img src="pict1.jpg" alt="#" width="1000" height="400">
+      <div class="txt-display">
+        <h3>Gili Islands, Lombok - Nusa Tenggara Barat</h3> 
+        <p>For The Best Nightlife</p>
+      </div>
+    </div>
+
+    <div class="pict pict-display mySlides">
+    <img src="pict2.jpg" alt="#" width="1000" height="400" >
+      <div class="txt-display">
+        <h3>Mount Bromo, East Java</h3>
+        <p>Volcano In An Active State</p>
+      </div>
+    </div>
+    
+    <div class="pict pict-display mySlides">
+    <img src="pict3.jpg"alt="#" width="1000" height="400">
+      <div class="txt-display">
+        <h3>Ijen, East Java</h3>
+        <p>For Mining Activities</p>
+      </div>
+    </div>
+    
+    <div class="pict pict-display mySlides">
+    <img src="pict4.jpg"alt="#" width="1000" height="400">
+      <div class="txt-display">
+        <h3>Maluk Beach, Sumbawa Island </h3>
+        <p>Witness The Changing Colors Of Sun Rays</p>
+      </div>
+    </div>
+    
+    <div class="pict pict-display mySlides">
+    <img src="pict5.jpg"alt="#" width="1000" height="400">
+      <div class="txt-display">
+        <h3>Lake Toba, North Sumatra</h3>
+        <p>Largest Caldera</p>
+      </div>
+    </div>
+
+  <!--list display-->
+
+  <div class="pic-section">
+    <div class="list-pict">
+        <ul class="flex-list">
+            <li>
+                <img class="list-opacity list-hover-opacity-off" src="pict1.jpg" onclick="currentDiv(1)" title="Gili Islands">
+            </li>
+        <li>
+            <img class="list-opacity list-hover-opacity-off" src="pict2.jpg" onclick="currentDiv(2)" title="Mount Bromo">
+        </li>
+
+        <li>
+            <img class="list-opacity list-hover-opacity-off" src="pict3.jpg" onclick="currentDiv(3)" title="Ijen">
+        </li>
+        <li>
+            <img class="list-opacity list-hover-opacity-off" src="pict4.jpg" onclick="currentDiv(4)" title="Sumbawa">
+        </li>
+        <li>
+            <img class="list-opacity list-hover-opacity-off" src="pict5.jpg" onclick="currentDiv(5)" title="Toba Lake">
+        </li>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+// Slideshow pict learn from W3S
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("mySlide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("pict-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "pict-opacity-off";
+}
+</script>
+
+    <div class="News"></div>
+
+    <div class="comment"></div>
+
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
