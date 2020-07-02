@@ -86,13 +86,9 @@ fieldset legend {
   }
 ul {
     list-style: none;
-}
-.flex-list ul {
-    list-style: none;
     padding: 2px 0px 0px 0px;
   }
-
-.flex-list li {
+li {
       margin-right: auto;
       margin-left: auto;
       padding: 5px;
