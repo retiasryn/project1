@@ -5,11 +5,35 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
     text-decoration: none;
 }
 
+.main {
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+.news {
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+
+fieldset {
+    width: 97%;
+    border: none;
+    border-top: solid 1px #fff;
+
+}
+
+fieldset legend {
+    color: #01245c;
+    font-family: Gotham-Medium;
+    font-size: 20px;
+}
+
 .mySlides {display: none}
 
 .pict-content {
-    height: 610px;
-    margin: 0 auto;
+    height: 600px;
+    margin: auto;
     background-color: aliceblue;
     text-align: center;
 }
@@ -20,8 +44,7 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
 
 
 .pict-container {
-    border-top: 1px solid #ccc!important;
-    border-bottom: 1px solid #ccc!important;
+    padding: 10px;
 }
 
 .pict-display {
@@ -33,9 +56,9 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
 .txt-display {
     position: absolute;
     align-content: center;
-    margin-left: 180px;
+    margin-left: 10px;
     float: left;
-    bottom: 10px;
+    bottom: 15px;
     color: #fff!important;
     opacity: 0.7;
     background-color: #000!important;
@@ -66,7 +89,7 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
 }
 
 .list-pict {
-    width: 90%; 
+    width: 100%; 
 }
 
 .list-opacity-off, .list-hover-opacity-off:hover {
@@ -84,13 +107,14 @@ body,h1,h2,h3,h4,h5,h6, p, li, ul {
   ul {
     list-style: none;
     padding: 10px;
-    margin-top: 0;
-    margin-left: 110px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
   }
 
   li {
       margin: 0 auto;
-      padding:2px;
+      padding: 3px;
   }
 
 .flex-list img {
