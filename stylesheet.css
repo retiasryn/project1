@@ -49,19 +49,20 @@ fieldset legend {
     margin-left: 10px;
     float: left;
     bottom: 15px;
-    letter-spacing: 3px;
     color: #fff!important;
     opacity: 0.7;
     background-color: #000!important;
 }
 
 .txt-display h3 {
+    letter-spacing: 4px;
     font-size: 15px; 
     margin: 0 auto;
     padding: 5px 15px 1px 15px;
 }
 
-.txt-display p {
+.txt-display p {    
+    letter-spacing: 4px;
     text-align: left;
     font-size: 10px;
     margin: 0 auto;
